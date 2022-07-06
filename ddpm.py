@@ -275,7 +275,7 @@ if __name__ == '__main__':
     model.fit(
         data_generator(),
         steps_per_epoch=2000,
-        epochs=10000,
+        epochs=10000,  # 只是预先设置足够多的epoch数，可以自行Ctrl+C中断
         callbacks=[trainer]
     )
 
