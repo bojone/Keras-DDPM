@@ -13,7 +13,7 @@
 ## 环境
 - tensorflow 1.15
 - keras 2.3.1
-- bert4keras 0.11.3
+- bert4keras （当前Github最新版本，不能用pip安装的版本）
 
 ## 要点
 - loss不能用mse
