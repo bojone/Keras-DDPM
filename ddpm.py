@@ -1,7 +1,7 @@
 #! -*- coding: utf-8 -*-
 # 生成扩散模型DDPM参考代码
 # U-Net结构经过笔者修改，降低了计算量
-# 实验环境：tf 1.15 + keras 2.3.1 + bert4keras 0.11.3
+# 实验环境：tf 1.15 + keras 2.3.1 + bert4keras（当前Github最新版本，不能用pip安装的版本）
 # 博客：https://kexue.fm/archives/9152
 
 import os
