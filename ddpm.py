@@ -45,7 +45,7 @@ alpha = np.sqrt(1 - 0.02 * np.arange(1, T + 1) / T)
 beta = np.sqrt(1 - alpha**2)
 bar_alpha = np.cumprod(alpha)
 bar_beta = np.sqrt(1 - bar_alpha**2)
-sigma = beta
+sigma = beta.copy()
 # sigma *= np.pad(bar_beta[1:], [1, 0]) / bar_beta
 
 
