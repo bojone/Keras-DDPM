@@ -46,7 +46,7 @@ beta = np.sqrt(1 - alpha**2)
 bar_alpha = np.cumprod(alpha)
 bar_beta = np.sqrt(1 - bar_alpha**2)
 sigma = beta.copy()
-# sigma *= np.pad(bar_beta[1:], [1, 0]) / bar_beta
+# sigma *= np.pad(bar_beta[:-1], [1, 0]) / bar_beta
 
 
 def imread(f, crop_size=None):
