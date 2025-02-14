@@ -13,7 +13,7 @@ def sample(path, n=4):
     """随机采样函数
     """
     z_samples = codebook[T][np.random.choice(K, size=n**2)]
-    for t in tqdm(range(t0, T), ncols=0):
+    for t in tqdm(range(T), ncols=0):
         t = T - t - 1
         bt = np.array([[t]] * z_samples.shape[0])
         z_samples -= beta[t]**2 / bar_beta[t] * model.predict([z_samples, bt])
